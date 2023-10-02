@@ -14,8 +14,9 @@ const routes = [
     Component: AboutPage
   },
   {
-    path: '/404',
-    Component: Page404
+    path: '/search/:query',
+    // eslint-disable-next-line react/prop-types
+    Component: ({ routeParams }) => <h1>Buscador: {routeParams.query} </h1>
   }
 ]
 
