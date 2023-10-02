@@ -3,6 +3,7 @@ import HomePage from './Pages/Home'
 import AboutPage from './Pages/About'
 import { Router } from './Router'
 import Page404 from './Pages/404'
+import SearchPage from './Pages/SearchPage'
 
 const routes = [
   {
@@ -15,8 +16,7 @@ const routes = [
   },
   {
     path: '/search/:query',
-    // eslint-disable-next-line react/prop-types
-    Component: ({ routeParams }) => <h1>Buscador: {routeParams.query} </h1>
+    Component: SearchPage
   }
 ]
 
